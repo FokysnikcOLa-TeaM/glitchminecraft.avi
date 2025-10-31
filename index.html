@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://avatars.mds.yandex.net/i?id=454e7268706ced0eed8c265439d52160_l-12569903-images-thumbs&n=13');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .text {
+            font-size: 5rem;
+            color: #ff0000;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .text {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <h1 class="text">Just a glitch</h1>
+</body>
+</html>
